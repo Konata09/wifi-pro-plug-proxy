@@ -36,10 +36,14 @@ def update():
             LastData.Input_AC_Frequency = data[15:19]
             LastData.Output_AC_Voltage = data[20:25]
             LastData.Output_AC_Frequency = data[26:30]
+            LastData.Load_In_VA = data[31:35]
             LastData.Load_In_Watt = data[36:40]
+            LastData.Load_Percent = data[41:44]
             LastData.Battery_Voltage = data[49:54]
             LastData.PV_Input_Voltage = data[73:78]
             LastData.PV_Input_Watt = data[106:111]
+
+            print(LastData.__dict__)
             updated = True
         except:
             # Clean up the connection

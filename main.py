@@ -10,5 +10,5 @@ from inverter import *
 
 threading.Thread(target=start_modbus).start()
 threading.Thread(target=start_prometheus).start()
-threading.Thread(target=start_mqtt).start()
+#threading.Thread(target=start_mqtt).start()
 
