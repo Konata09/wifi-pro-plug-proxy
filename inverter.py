@@ -43,7 +43,6 @@ def update():
             LastData.PV_Input_Voltage = data[73:78]
             LastData.PV_Input_Watt = data[106:111]
 
-            print(LastData.__dict__)
             updated = True
         except:
             # Clean up the connection
